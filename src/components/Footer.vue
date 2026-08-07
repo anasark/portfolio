@@ -59,7 +59,16 @@ useReveal();
   <footer class="py-8 bg-surface dark:bg-ink border-t border-faint dark:border-white/10">
     <div class="container-custom">
       <p class="text-center font-mono text-xs text-muted">
-        &copy; {{ new Date().getFullYear() }} Anas Abdur
+        &copy; {{ new Date().getFullYear() }} {{ profile.name }}
+        <span class="mx-2 text-faint dark:text-white/20">/</span>
+        <a
+          :href="profile.repository"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-ink dark:hover:text-surface transition-colors"
+        >
+          Source
+        </a>
       </p>
     </div>
   </footer>

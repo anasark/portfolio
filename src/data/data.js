@@ -8,6 +8,7 @@ export const profile = {
     user: "Anas Abdur"
   },
   github: "anasark",
+  repository: "https://github.com/anasark/portfolio",
   summary: [
     "Web Developer with over 5 years of experience in creating and maintaining websites and web applications. Proficient in a variety of programming languages, including HTML, CSS, JavaScript and PHP. Skilled in using content management systems such as WordPress, as well as web development frameworks such as Laravel and Vue JS.",
     "Committed to staying up-to-date with the latest web development trends and best practices, and continually improving my skills through self-study and professional development opportunities."
