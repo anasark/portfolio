@@ -148,6 +148,21 @@ export const resume = {
 
 export const portfolio = [
   {
+    name: "EcoCommerce",
+    url: "",
+    status: "private",
+    type: "Laravel",
+    project: "Web Application",
+    framework: "Laravel, VueJS, PWA",
+    images: [
+      "/images/portfolio/ecocommerce/1.png",
+      "/images/portfolio/ecocommerce/2.png"
+    ],
+    description: [
+      "Developed a Progressive Web App (PWA) for Desa Rejoagung's circular economy using separate Laravel backend and VueJS frontend services in a microservice-style architecture, connecting local community groups with customers through product, order, payment, subscription, article, and administrative management features."
+    ]
+  },
+  {
     name: "Media Monitoring Dashboard",
     url: "https://narrvio.ctx.co.id/dashboard",
     status: "live",
