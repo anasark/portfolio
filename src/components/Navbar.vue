@@ -66,6 +66,7 @@ onUnmounted(() => {
         <div class="md:hidden flex items-center gap-3">
           <button
             @click="toggleDarkMode"
+            :aria-label="isDark ? 'Switch to light mode' : 'Switch to dark mode'"
             class="font-mono text-xs text-muted"
           >
             {{ isDark ? 'LT' : 'DK' }}
@@ -73,9 +74,11 @@ onUnmounted(() => {
 
           <button
             @click="isMobileMenuOpen = !isMobileMenuOpen"
+            :aria-label="isMobileMenuOpen ? 'Close menu' : 'Open menu'"
+            :aria-expanded="isMobileMenuOpen"
             class="text-ink dark:text-surface"
           >
-            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+            <svg class="h-5 w-5" aria-hidden="true" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
               <path v-if="!isMobileMenuOpen" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 18h16" />
               <path v-else stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
             </svg>

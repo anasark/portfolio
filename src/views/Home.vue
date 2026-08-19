@@ -9,11 +9,13 @@ import Footer from '../components/Footer.vue';
 
 <template>
   <div>
-    <Hero />
-    <About />
-    <Experience />
-    <Skills />
-    <Portfolio />
+    <main>
+      <Hero />
+      <About />
+      <Experience />
+      <Skills />
+      <Portfolio />
+    </main>
     <Footer />
   </div>
 </template>
