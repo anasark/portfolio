@@ -149,8 +149,8 @@ export const resume = {
 export const portfolio = [
   {
     name: "EcoCommerce",
-    url: "",
-    status: "private",
+    url: "https://eco-commerce.id/",
+    status: "live",
     type: "Laravel",
     project: "Web Application",
     framework: "Laravel, VueJS, PWA",

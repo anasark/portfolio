@@ -142,13 +142,21 @@ const padIndex = (index) => {
           <!-- Images -->
           <div v-if="selectedProject.images && selectedProject.images.length > 0">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <img
+              <a
                 v-for="(image, idx) in selectedProject.images"
                 :key="idx"
-                :src="image"
-                :alt="`${selectedProject.name} ${idx + 1}`"
-                class="w-full rounded-[2px]"
-              />
+                :href="image"
+                target="_blank"
+                rel="noopener noreferrer"
+                :aria-label="`Open ${selectedProject.name} image ${idx + 1} in a new tab`"
+                class="block cursor-zoom-in"
+              >
+                <img
+                  :src="image"
+                  :alt="`${selectedProject.name} ${idx + 1}`"
+                  class="w-full rounded-[2px]"
+                />
+              </a>
             </div>
           </div>
 
