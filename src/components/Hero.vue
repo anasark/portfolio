@@ -52,7 +52,7 @@ const scrollToContact = () => {
             Get in touch
           </a>
           <a
-            href="https://anasabdur.com/data/resume.pdf"
+            :href="profile.resume"
             target="_blank"
             class="inline-block font-mono text-xs uppercase tracking-[0.1em] text-muted border-b border-muted pb-1 hover:text-ink dark:hover:text-surface hover:border-ink dark:hover:border-surface transition-colors"
           >
